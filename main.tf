@@ -9,7 +9,7 @@ data "template_file" "test" {
   }
 }
 
-module "sleepy-modules" {
+module "tf_modules_test" {
  # source = "./sleepy-modules"
   source = "git@github.ibm.com:gshamann/terraform_13_modules.git//sleepy-modules"
   module_sample_var = "************** ${var.sample_var} ********** "
